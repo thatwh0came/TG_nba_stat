@@ -118,7 +118,7 @@ parc()
 
 
 '''
-schedule.every().day.at("19:40").do(parc)
+schedule.every().day.at("9:01").do(parc)
 while True:
    schedule.run_pending()
    time.sleep(1)'''
