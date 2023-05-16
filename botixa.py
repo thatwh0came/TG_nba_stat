@@ -24,7 +24,7 @@ cursor = conn.cursor()
 cursor.execute('SELECT * FROM stats')
 rows = cursor.fetchall()
 
-bot = telebot.TeleBot("5556001810:AAHC5EOqRnorGiuYHJyY4rL_ntgMr131Jbk")
+bot = telebot.TeleBot("")
 bot.set_webhook()
 
 menu_keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True)
