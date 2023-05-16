@@ -35,9 +35,9 @@ menu_keyboard.add(itembtn1)
 def welcome_message(message):
     username = message.from_user.username
     if username:
-        bot.send_message(chat_id=message.chat.id, text = f"Здаров заебал, {username}\nЯ буду присылать тебе результаты матчей Национальной Баскетбольной Ассоциации")
+        bot.send_message(chat_id=message.chat.id, text = f"Приветствую, {username}\nЯ буду присылать тебе результаты матчей Национальной Баскетбольной Ассоциации")
     else:
-        bot.send_message(chat_id=message.chat.id, text = f"Здаров, лысый\nЯ буду присылать тебе результаты твоих любимых команд Национальной Баскетбольной Ассоциации")
+        bot.send_message(chat_id=message.chat.id, text = f"Здравствуй, инкогнито\nЯ буду присылать тебе результаты твоих любимых команд Национальной Баскетбольной Ассоциации")
     bot.send_message(message.chat.id, "Нажми на кнопку, чтобы начать получать рассылку результатов", reply_markup=menu_keyboard)
 
 
